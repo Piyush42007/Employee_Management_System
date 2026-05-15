@@ -1,0 +1,20 @@
+{
+  "101": {
+    "ID": 101,
+    "department": "IT",
+    "name": "Piyush Saini",
+    "salary": 500000.0
+  },
+  "102": {
+    "ID": 102,
+    "department": "Comedy",
+    "name": "Rahul Dua",
+    "salary": 500000.0
+  },
+  "103": {
+    "ID": 103,
+    "department": "Comedy",
+    "name": "Samay Raina",
+    "salary": 500000.0
+  }
+}
