@@ -1,5 +1,4 @@
-class Input_validation():
-    @staticmethod
+class InputValidation():
     def prompt_id(prompt: int = "Enter ID: "):
         while True:
             try:
@@ -13,8 +12,7 @@ class Input_validation():
             else:
                 print("ID should be a Positive number")
                 continue
-
-    @staticmethod          
+         
     def prompt_text(prompt):
         while True:
             value = input(prompt).title()
@@ -23,7 +21,6 @@ class Input_validation():
                 continue
             return value
 
-    @staticmethod
     def prompt_salary(prompt):
         while True:
             try:
