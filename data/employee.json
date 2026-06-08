@@ -4,5 +4,29 @@
     "department": "Dep1",
     "name": "Emp1",
     "salary": 100000.0
+  },
+  "102": {
+    "ID": 102,
+    "department": "Dep1",
+    "name": "Emp2",
+    "salary": 200000.0
+  },
+  "103": {
+    "ID": 103,
+    "department": "Dep2",
+    "name": "Emp3",
+    "salary": 300000.0
+  },
+  "104": {
+    "ID": 104,
+    "department": "It",
+    "name": "Piyutsh Saini",
+    "salary": 500000.0
+  },
+  "105": {
+    "ID": 105,
+    "department": "It",
+    "name": "Emp5",
+    "salary": 100000.0
   }
 }

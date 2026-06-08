@@ -10,15 +10,14 @@ file_path = "data\employee.json"
 def load_data(file: str = file_path):
     employees = {}
     # Load Json file Data to variable data
-    with open(file,"r") as f:
-        try:
+    try:
+        with open(file,"r") as f:
             try:
                 data = json.load(f)
-            except FileNotFoundError:
-                print("FIle not found!")
-                return 
-        except JSONDecodeError:
-                data = {} 
+            except JSONDecodeError:
+                    data = {} 
+    except FileNotFoundError:
+         print("FIle not found!")
 
     # Convert data to objects and stored in dict employees (ID as key) 
     for emp_data in data.values():

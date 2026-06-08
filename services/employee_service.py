@@ -20,7 +20,9 @@ class EmployeeService:
         return True
         
     def view_employee(self) -> str:
-        emp_view_str = "-"*50 + "\n"
+        if not self.storage:
+            return "No Employee found!"
+        emp_view_str = "-"*50 + "\n"    
         for emp in self.storage.values():
             emp_view_str += str(emp) + "\n" + "-"*50 + "\n"
         return emp_view_str

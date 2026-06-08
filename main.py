@@ -23,11 +23,12 @@ def view_ui(service,valid):
 def search_ui(service,valid):
     emp_id = valid.prompt_id()
 
-    if service.search_employee_by_id(emp_id) == None:
+    emp = service.search_employee_by_id(emp_id)
+    if emp == None:
         print("Employee ID not Exit")
     else:
         print("-"*50)
-        print(service.search_employee_by_id(emp_id))
+        print(emp)
         print("-"*50)
 
 def update_ui(service,valid):
@@ -83,5 +84,6 @@ def menu():
 
 
 
-menu()
+if __name__ == "__main__":
+    menu()
     
